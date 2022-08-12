@@ -1,1 +1,358 @@
+1. dir
 
+
+    Directory: C:\Users\ojank
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        11/27/2021   6:57 PM                .android
+d-----        11/26/2021  11:27 AM                .cache
+d-----        11/26/2021  11:27 AM                .eclipse
+d-----        11/28/2021   4:10 PM                .p2
+d-----         7/10/2022   3:53 PM                .VirtualBox
+d-----         6/20/2022   6:32 PM                .vscode
+d-r---          6/5/2021   6:34 PM                Contacts
+d-----          6/5/2021   6:38 PM                Documents
+d-r---         8/12/2022   2:00 PM                Downloads
+d-----        11/27/2021   6:45 PM                eclipse
+d-----        11/28/2021   4:47 PM                eclipse-workspace
+d-r---          6/5/2021   6:34 PM                Favorites
+d-r---          6/5/2021   6:34 PM                Links
+d-----         8/12/2022   4:18 PM                mkdir 1
+d-r---          6/5/2021   6:34 PM                Music
+dar--l         8/12/2022  12:39 PM                OneDrive
+d-r---          6/5/2021   6:34 PM                Saved Games
+d-r---        11/23/2021  11:11 AM                Searches
+d-r---         7/11/2022   2:12 PM                Videos
+d-----         7/10/2022   3:49 PM                VirtualBox VMs
+
+2. date
+
+Friday, August 12, 2022 4:21:21 PM
+
+3. mkdir
+
+cmdlet mkdir at command pipeline position 1
+Supply values for the following parameters:
+Path[0]: mkdir first
+Path[1]:
+
+
+    Directory: C:\Users\ojank
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         8/12/2022   4:21 PM                mkdir first
+
+PS C:\Users\ojank> nslookup
+Default Server:  UnKnown
+Address:  192.168.1.1
+
+
+4. ping 8.8.8.8
+
+Pinging 8.8.8.8 with 32 bytes of data:
+Reply from 8.8.8.8: bytes=32 time=20ms TTL=55
+Reply from 8.8.8.8: bytes=32 time=21ms TTL=55
+Reply from 8.8.8.8: bytes=32 time=20ms TTL=55
+
+Ping statistics for 8.8.8.8:
+    Packets: Sent = 3, Received = 3, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 20ms, Maximum = 21ms, Average = 20ms
+Control-C
+
+PS C:\Users\ojank> attrib
+A   H   I            C:\Users\ojank\NTUSER.DAT
+A  SH                C:\Users\ojank\ntuser.dat.LOG1
+A  SH                C:\Users\ojank\ntuser.dat.LOG2
+A  SH                C:\Users\ojank\NTUSER.DAT{1c2b59c5-c5f5-11eb-bacb-000d3a96488e}.TxR.0.regtrans-ms
+A  SH                C:\Users\ojank\NTUSER.DAT{1c2b59c5-c5f5-11eb-bacb-000d3a96488e}.TxR.1.regtrans-ms
+A  SH                C:\Users\ojank\NTUSER.DAT{1c2b59c5-c5f5-11eb-bacb-000d3a96488e}.TxR.2.regtrans-ms
+A  SH                C:\Users\ojank\NTUSER.DAT{1c2b59c5-c5f5-11eb-bacb-000d3a96488e}.TxR.blf
+A  SH                C:\Users\ojank\NTUSER.DAT{1c2b59c6-c5f5-11eb-bacb-000d3a96488e}.TM.blf
+A  SH                C:\Users\ojank\NTUSER.DAT{1c2b59c6-c5f5-11eb-bacb-000d3a96488e}.TMContainer00000000000000000001.regtrans-ms
+A  SH                C:\Users\ojank\NTUSER.DAT{1c2b59c6-c5f5-11eb-bacb-000d3a96488e}.TMContainer00000000000000000002.regtrans-ms
+   SH                C:\Users\ojank\ntuser.ini
+
+5. hostname
+ojan
+
+6. getmac
+
+Physical Address    Transport Name
+=================== ==========================================================
+10-62-E5-51-32-A0   Media disconnected
+90-32-4B-35-9A-E7   \Device\Tcpip_{76B4F78F-8153-4D53-960A-E898FB6D34BB}
+0A-00-27-00-00-0F   \Device\Tcpip_{BC285281-257C-4B6A-B9E4-C3B66D67658D}
+00-FF-73-97-F9-22   Media disconnected
+
+7. whoami
+ojan\ojank
+
+8. echo
+
+cmdlet Write-Output at command pipeline position 1
+Supply values for the following parameters:
+InputObject[0]: tes 1
+InputObject[1]: tes2
+InputObject[2]:
+tes 1
+tes2
+
+9. help
+
+TOPIC
+    Windows PowerShell Help System
+
+SHORT DESCRIPTION
+    Displays help about Windows PowerShell cmdlets and concepts.
+
+LONG DESCRIPTION
+    Windows PowerShell Help describes Windows PowerShell cmdlets,
+    functions, scripts, and modules, and explains concepts, including
+    the elements of the Windows PowerShell language.
+
+    Windows PowerShell does not include help files, but you can read the
+    help topics online, or use the Update-Help cmdlet to download help files
+    to your computer and then use the Get-Help cmdlet to display the help
+    topics at the command line.
+
+    You can also use the Update-Help cmdlet to download updated help files
+    as they are released so that your local help content is never obsolete.
+
+    Without help files, Get-Help displays auto-generated help for cmdlets,
+    functions, and scripts.
+
+
+  ONLINE HELP
+    You can find help for Windows PowerShell online in the TechNet Library
+    beginning at http://go.microsoft.com/fwlink/?LinkID=108518.
+
+    To open online help for any cmdlet or function, type:
+
+        Get-Help <cmdlet-name> -Online
+
+  UPDATE-HELP
+    To download and install help files on your computer:
+
+       1. Start Windows PowerShell with the "Run as administrator" option.
+       2. Type:
+
+          Update-Help
+
+    After the help files are installed, you can use the Get-Help cmdlet to
+    display the help topics. You can also use the Update-Help cmdlet to
+    download updated help files so that your local help files are always
+    up-to-date.
+
+    For more information about the Update-Help cmdlet, type:
+
+10. ipconfig
+
+Windows IP Configuration
+
+
+Ethernet adapter Ethernet:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Ethernet adapter VirtualBox Host-Only Network:
+
+   Connection-specific DNS Suffix  . :
+   Link-local IPv6 Address . . . . . : fe80::477:f350:8f5e:c58f%15
+   IPv4 Address. . . . . . . . . . . : 192.168.56.1
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . :
+
+Ethernet adapter Ethernet 2:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Local Area Connection* 1:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Local Area Connection* 10:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Wi-Fi:
+
+   Connection-specific DNS Suffix  . :
+   Link-local IPv6 Address . . . . . : fe80::93d:7868:35f1:88ec%10
+   IPv4 Address. . . . . . . . . . . : 192.168.1.7
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : 192.168.1.1
+
+11. logman
+
+Data Collector Set                      Type                          Status
+-------------------------------------------------------------------------------
+
+The command completed successfully.
+
+12. md
+
+cmdlet mkdir at command pipeline position 1
+Supply values for the following parameters:
+Path[0]: tes 1
+Path[1]:
+
+
+    Directory: C:\Users\ojank
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         8/12/2022   4:26 PM                tes 1
+
+13. netstat
+
+Active Connections
+
+  Proto  Local Address          Foreign Address        State
+  TCP    127.0.0.1:49738        ojan:49981             ESTABLISHED
+  TCP    127.0.0.1:49981        ojan:49738             ESTABLISHED
+
+14. pause
+Press Enter to continue...:
+
+15. recover
+RECOVER [drive:][path]filename
+
+16. robocopy
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows
+-------------------------------------------------------------------------------
+
+  Started : Friday, 12 August 2022 16:38:06
+       Simple Usage :: ROBOCOPY source destination /MIR
+
+             source :: Source Directory (drive:\path or \\server\share\path).
+        destination :: Destination Dir  (drive:\path or \\server\share\path).
+               /MIR :: Mirror a complete directory tree.
+
+    For more usage information run ROBOCOPY /?
+
+
+****  /MIR can DELETE files as well as copy them !
+
+17. tasklist
+
+Image Name                     PID Session Name        Session#    Mem Usage
+========================= ======== ================ =========== ============
+System Idle Process              0 Services                   0          8 K
+System                           4 Services                   0         20 K
+Registry                       100 Services                   0     41.444 K
+smss.exe                       400 Services                   0        332 K
+csrss.exe                      660 Services                   0      2.888 K
+wininit.exe                    740 Services                   0      1.760 K
+csrss.exe                      748 Console                    1      3.908 K
+winlogon.exe                   836 Console                    1      3.820 K
+services.exe                   852 Services                   0      5.672 K
+lsass.exe                      884 Services                   0     12.692 K
+svchost.exe                   1008 Services                   0     21.612 K
+fontdrvhost.exe               1016 Services                   0        876 K
+fontdrvhost.exe                 72 Console                    1      6.284 K
+WUDFHost.exe                   644 Services                   0      5.028 K
+svchost.exe                   1040 Services                   0     11.892 K
+svchost.exe                   1088 Services                   0      4.068 K
+
+18. compact
+
+ Listing C:\Users\ojank\
+ New files added to this directory will not be compressed.
+
+        0 :         0 = 1,0 to 1   .android
+        0 :         0 = 1,0 to 1   .cache
+        0 :         0 = 1,0 to 1   .eclipse
+        0 :         0 = 1,0 to 1   .p2
+        0 :         0 = 1,0 to 1   .VirtualBox
+        0 :         0 = 1,0 to 1   .vscode
+        0 :         0 = 1,0 to 1   Contacts
+        0 :         0 = 1,0 to 1   Documents
+        0 :         0 = 1,0 to 1   Downloads
+        0 :         0 = 1,0 to 1   eclipse
+        0 :         0 = 1,0 to 1   eclipse-workspace
+        0 :         0 = 1,0 to 1   Favorites
+        0 :         0 = 1,0 to 1   Links
+        0 :         0 = 1,0 to 1   mkdir 1
+        0 :         0 = 1,0 to 1   mkdir first
+        0 :         0 = 1,0 to 1   Music
+        0 :         0 = 1,0 to 1   OneDrive
+        0 :         0 = 1,0 to 1   Saved Games
+        0 :         0 = 1,0 to 1   Searches
+        0 :         0 = 1,0 to 1   tes 1
+        0 :         0 = 1,0 to 1   Videos
+        0 :         0 = 1,0 to 1   VirtualBox VMs
+
+Of 46 files within 1 directories
+0 are compressed and 46 are not compressed.
+15.675.412 total bytes of data are stored in 15.675.412 bytes.
+The compression ratio is 1,0 to 1.
+
+19. cacls
+
+ NOTE: Cacls is now deprecated, please use Icacls.
+
+ Displays or modifies access control lists (ACLs) of files
+
+ CACLS filename [/T] [/M] [/L] [/S[:SDDL]] [/E] [/C] [/G user:perm]
+        [/R user [...]] [/P user:perm [...]] [/D user [...]]
+    filename      Displays ACLs.
+    /T            Changes ACLs of specified files in
+                  the current directory and all subdirectories.
+    /L            Work on the Symbolic Link itself versus the target
+    /M            Changes ACLs of volumes mounted to a directory
+    /S            Displays the SDDL string for the DACL.
+    /S:SDDL       Replaces the ACLs with those specified in the SDDL string
+                  (not valid with /E, /G, /R, /P, or /D).
+    /E            Edit ACL instead of replacing it.
+    /C            Continue on access denied errors.
+    /G user:perm  Grant specified user access rights.
+                  Perm can be: R  Read
+                               W  Write
+                               C  Change (write)
+                               F  Full control
+    /R user       Revoke specified user's access rights (only valid with /E).
+    /P user:perm  Replace specified user's access rights.
+                  Perm can be: N  None
+                               R  Read
+                               W  Write
+                               C  Change (write)
+                               F  Full control
+    /D user       Deny specified user access.
+ Wildcards can be used to specify more than one file in a command.
+ You can specify more than one user in a command.
+
+ Abbreviations:
+    CI - Container Inherit.
+         The ACE will be inherited by directories.
+    OI - Object Inherit.
+         The ACE will be inherited by files.
+    IO - Inherit Only.
+         The ACE does not apply to the current file/directory.
+    ID - Inherited.
+         The ACE was inherited from the parent directory's ACL.
+
+20. finger
+
+Displays information about a user on a specified system running the
+Finger service. Output varies based on the remote system.
+
+FINGER [-l] [user]@host [...]
+
+  -l        Displays information in long list format.
+  user      Specifies the user you want information about. Omit the user
+            parameter to display information about all users on the
+            specifed host.
+  @host     Specifies the server on the remote system whose users you
+            want information about.
