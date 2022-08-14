@@ -158,5 +158,26 @@ Trello menyediakan cara sederhana dan visual untuk mengelola tugas. Menggunakan 
 ### Github dan Pivotal Tracker 
 Pivotal Tracker adalah alat manajemen proyek gesit ringan lainnya di mana perencanaan berbasis cerita memungkinkan tim untuk berkolaborasi dengan mudah dengan langsung bereaksi terhadap berbagai perubahan dan kemajuan proyek. Berdasarkan kemajuan tim saat ini, itu juga dapat membuat bagan untuk menganalisis kecepatan tim, iterasi burn-up, rilis burn-down, dll. Dalam contoh singkat ini, kami akan secara otomatis mengirimkan cerita dengan menautkannya ke komit Github!
 
+1. Buat proyek baru di Pivotal Tracker dengan Cerita baru yang perlu disampaikan.
+
+![image](https://user-images.githubusercontent.com/70005931/184543262-2b5f4fd8-5d55-4104-a840-1016ff8062ad.png)
+
+2. Buka Profil > Token API (tepat di bagian bawah). Salin token API yang diberikan.
+
+![image](https://user-images.githubusercontent.com/70005931/184543318-25001744-8554-4a8c-a75b-482e4d012520.png)
+
+3.Kembali ke repositori Github > Pengaturan > Kait Layanan > Pelacak Penting. Tempel token, centang Aktif dan klik Perbarui Pengaturan. Kami siap untuk mengirimkan Cerita Pelacak Penting secara otomatis dengan Github Commits!
+
+4. akhirnya kami akan melakukan perubahan kami dan menambahkan id pelacak ke pesan komit dengan format git commit -m "message [delivers #tracker_id]"
+```
+$ git add .
+$ git commit -m "Github and Pivotal Tracker hooks implemented [delivers #43903595]"
+$ git push
+```
+
+5. sekarang, ketika kita kembali ke Pivotal Tracker, kita akan melihat bahwa cerita telah dikirimkan secara otomatis dengan tautan ke komit Github persis yang menunjukkan perubahan file!
+
+Dengan contoh Trello dan Pivotal Tracker ini, jelas bahwa kita dapat memasangkan daftar tugas dan pembaruan dengan komit kode kita dengan erat. Ini adalah penghemat waktu yang luar biasa saat bekerja dalam tim, dan ini meningkatkan akurasi saat menautkan tugas ke komitmen yang tepat. Kabar baiknya adalah, jika Anda sudah menggunakan alat manajemen proyek lain seperti Asana, Basecamp, dan lainnya, Anda juga dapat membuat Service Hooks dengan cara serupa. Jika tidak ada Kait Layanan untuk alat manajemen proyek Anda saat ini, Anda bahkan dapat membuatnya!
+
 
 
