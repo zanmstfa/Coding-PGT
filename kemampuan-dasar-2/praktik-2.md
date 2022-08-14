@@ -180,4 +180,68 @@ $ git push
 Dengan contoh Trello dan Pivotal Tracker ini, jelas bahwa kita dapat memasangkan daftar tugas dan pembaruan dengan komit kode kita dengan erat. Ini adalah penghemat waktu yang luar biasa saat bekerja dalam tim, dan ini meningkatkan akurasi saat menautkan tugas ke komitmen yang tepat. Kabar baiknya adalah, jika Anda sudah menggunakan alat manajemen proyek lain seperti Asana, Basecamp, dan lainnya, Anda juga dapat membuat Service Hooks dengan cara serupa. Jika tidak ada Kait Layanan untuk alat manajemen proyek Anda saat ini, Anda bahkan dapat membuatnya!
 
 
+## Alat 6: Integrasi Berkelanjutan
+Continuous Integration (CI) adalah bagian penting dari semua proyek pengembangan perangkat lunak yang bekerja dengan tim. CI memastikan bahwa, ketika pengembang memeriksa kode mereka, build otomatis (termasuk pengujian) mendeteksi kesalahan integrasi secepat mungkin. Ini jelas mengurangi kesalahan integrasi dan membuat iterasi cepat jauh lebih efisien. Dalam contoh ini, kita akan melihat bagaimana Travis CI dapat digunakan dengan Github untuk CI guna mendeteksi kesalahan serta merekomendasikan penggabungan ketika melewati semua pengujian.
+
+### Menyiapkan Travis CI
+Kami akan menggunakan proyek "hello-world" sederhana untuk node.js dengan grunt.js sebagai alat pembangunan untuk menyiapkan proyek Travis CI. Berikut adalah file dalam proyek:
+
+1. File hello.js adalah proyek simpul. Di sini kita sengaja akan meninggalkan titik koma agar tidak melewati alat build kasar untuk linting:
+```
+var http = require('http');
+http.createServer(function (req, res) {
+res.writeHead(200, {'Content-Type': 'text/plain'});
+  res.end('Hello World in Node!\n') // without semicolon, this will not pass linting
+}).listen(1337, '127.0.0.1');
+console.log('Server running at http://127.0.0.1:1337/');
+```
+2. package.json menunjukkan dependensi:
+```
+{
+  "name": "hello-team",
+  "description": "A demo for github and travis ci for team collaboration",
+  "author": "name <email@email.com>",
+  "version": "0.0.1",
+  "devDependencies": {
+    "grunt": "~0.3.17"
+  },
+  "scripts": {
+    "test": "grunt travis --verbose"
+  }
+}
+```
+
+3. Alat build gruntjs hanya memiliki satu tugas (linting) hanya untuk kesederhanaan:
+```
+module.exports = function(grunt) {
+    grunt.initConfig({
+     lint: {
+      files: ['hello.js']
+    }
+  });
+  grunt.registerTask('default', 'lint');
+  grunt.registerTask('travis', 'lint');
+};
+```
+
+4. .travis.yml adalah file konfigurasi Travis yang akan membuat Travis menjalankan pengujian kami:
+```
+language: node_js
+node_js:
+  - 0.8
+```
+
+5. Selanjutnya, masuk ke Travis dengan Akun Github Anda dan nyalakan kait repositori di bawah tab repositori.
+
+6. Jika langkah sebelumnya tidak memicu build, maka kita harus mengatur service hook secara manual. Untuk mengaturnya secara manual, salin Token di bawah tab profil.
+
+7. Kembali ke repositori Github untuk menyiapkan kait layanan Github Travis dengan token
+
+8. untuk pertama kalinya, kita perlu melakukan git push manual untuk memicu build Travis pertama dan jika semuanya baik-baik saja, kunjungi http://travis-ci.org/[username]/[repo-name] untuk melihat build status lulus!
+
+### Travis CI with Pull Requests
+Sebelumnya, tanpa CI dalam proses pull request, langkah-langkahnya seperti ini (1) mengirim pull request (2) menggabungkan (3) tes untuk melihat apakah lulus/gagal. Dengan Travis CI terhubung ke pull request, kita akan dapat membalikkan langkah 2 dan 3, lebih lanjut meningkatkan pengambilan keputusan yang cepat tentang apakah baik untuk bergabung dengan Travis memberi kita status dengan setiap pull request. Mari kita lihat bagaimana mewujudkannya.
+
+
+
 
