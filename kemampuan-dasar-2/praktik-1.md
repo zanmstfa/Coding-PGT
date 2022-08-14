@@ -107,6 +107,6 @@ $ git commit -m "test branch baru"
 
 jika sudah menambahkan sebuah file di dalam branch "create_user" maka anda bisa melakukan **$ git commit**
 
-### Selesai!
+### Selesai!!
 
 
