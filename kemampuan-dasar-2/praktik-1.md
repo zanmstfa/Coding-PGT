@@ -18,7 +18,7 @@ Tulis perintah yang ada di gambar yang ada di sebelah kiri secara satu per satu 
 
 ![image](https://user-images.githubusercontent.com/70005931/184524167-35aa9cd8-1817-4350-bfb3-88c9bf328a1e.png)
 
-Sekarang mari kita perbarui Repo ini. dengan menmbahkan sebuah file di dalam folder "github_guide" yang telah anda buat.
+Sekarang mari kita perbarui Repo ini. dengan menambahkan sebuah file di dalam folder "github_guide" yang telah anda buat.
 
 ![image](https://user-images.githubusercontent.com/70005931/184526794-5546cc25-8cae-4a11-bf87-743be5474e01.png)
 
@@ -31,3 +31,27 @@ $ git push
 ```
 
 ![image](https://user-images.githubusercontent.com/70005931/184526807-89fd4b44-011e-4bfc-a397-922eaa0cbf3b.png)
+
+Sekarang periksa repo Anda. dan lihat file yang telah anda tambahkan di dalam folder "github_guide". seharusnya akan terlihat seperti ini
+
+![image](https://user-images.githubusercontent.com/70005931/184527997-fdd62ea4-d968-4361-b1d5-b59c047582ac.png)
+
+Anda telah diinisialisasi dan siap untuk mulai bekerja!!
+
+## Langkah 2: Siapkan Tim Anda
+
+Anda adalah pemain tim, jadi Anda perlu menambahkan tim Anda ke repo agar mereka dapat berkolaborasi. Setelah tim Anda ditambahkan sebagai kolaborator, mereka akan dapat mendorong, menggabungkan, dan banyak hal merusak lainnya, jadi pastikan Anda hanya menambahkan rekan satu tim Anda.
+
+Klik pada tab "Settings" perwakilan Anda, lalu "Collaborators" lalu cari pengguna Github dan tambahkan mereka dengan mengklik "Add Collaborator":
+
+![image](https://user-images.githubusercontent.com/70005931/184528216-0d547a95-8a3c-4ae1-8bcd-689965b50a96.png)
+
+Mereka akan menerima email yang memberitahukan bahwa Anda menambahkan mereka dan akan terdaftar sebagai kolaborator.
+
+![image](https://user-images.githubusercontent.com/70005931/184528343-3d485eba-a5c5-4480-a0dc-b1981a18f056.png)
+
+Anda ingin berkolaborasi di Repo Github yang sama dengan rekan satu tim Anda. Jika Anda seorang kolaborator, buka halaman Github Repo, Git Clone proyek, dan cd ke direktori.
+
+
+
+
