@@ -52,6 +52,61 @@ Mereka akan menerima email yang memberitahukan bahwa Anda menambahkan mereka dan
 
 Anda ingin berkolaborasi di Repo Github yang sama dengan rekan satu tim Anda. Jika Anda seorang kolaborator, buka halaman Github Repo, Git Clone proyek, dan cd ke direktori.
 
+![image](https://user-images.githubusercontent.com/70005931/184528431-62c63d4a-cabc-44ad-bd1e-fbcd89e6f574.png)
 
+``` bash
+$ git clone https://github.com/zanmstfa/github_guide.git
+$cd github_guide/
+```
+
+Dan sekarang Anda siap untuk berkolaborasi!!
+
+## Langkah 3: Berkolaborasi
+ 
+ Saat Anda menggunakan git untuk mengerjakan proyek yang sama dengan banyak orang, ada satu aturan utama yang harus Anda ikuti:
+
+**CABANG UTAMA HARUS SELALU DIPLOYABLE**
+
+Cara agar Master dapat digunakan adalah dengan membuat cabang baru untuk fitur baru dan menggabungkannya ke dalam Master setelah selesai. Inilah cara kerjanya.
+
+### Langkah 3a: Cabang
+
+Untuk memulai, cabang harus selalu mewakili fitur. Misalnya, jika Anda ingin menambahkan kemampuan bagi pengguna untuk masuk, Anda mungkin harus membuat cabang yang disebut "user_authentication" dan di cabang itu Anda hanya perlu memperbarui apa yang Anda perlukan untuk memungkinkan pengguna masuk.
+
+Penting juga saat berkolaborasi agar tim Anda memilih fitur yang tidak memiliki kode yang tumpang tindih. Misalnya, Anda tidak boleh mengerjakan cabang "user_login" pada saat yang sama dengan rekan satu tim Anda bekerja di cabang "user_logout" karena kemungkinan Anda mengerjakan file yang sama dan menulis kode yang tumpang tindih sangat tinggi .
+
+Jadi katakanlah Anda ingin membuat model Pengguna. Di terminal Anda, buat cabang baru:
+
+``` bash
+$ git checkout -b create_user
+```
+“checkout” yang digunakan untuk berpindah antar cabang. Menambahkan "-b" dan nama di akhir membuat cabang baru dan kemudian pindah ke cabang baru itu untuk kita.
+
+Anda bisa melihat apakah kita sudah membuat cabang baru dengan cara
+
+``` bash
+$ git branch
+```
+Yang harus menghasilkan:
+
+![image](https://user-images.githubusercontent.com/70005931/184528667-76af345e-57fa-4991-bb2a-63c9548bb048.png)
+
+Anda sekarang berada di cabang baru dan dapat mulai membuat kode.
+
+Catatan: Sebagai aturan umum, Anda harus sering git add dan git commit ketika Anda menyelesaikan sesuatu yang memungkinkan kode Anda berfungsi (berakhir menjadi beberapa kali dalam satu jam). Misalnya, ketika Anda menyelesaikan suatu metode dan basis kode berfungsi, git commit seperti ini:
+
+``` bash
+$ git commit -m "test branch baru"
+```
+
+*pastikan sebelumnya anda sudah membuat file terlebih dahulu sebelum **$ git commit** anda bebas membuat file apa saja
+
+``` bash
+(use "git add/rm <file>..." to update what will be committed)
+```
+
+jika sudah menambahkan sebuah file di dalam branch "create_user" maka anda bisa melakukan **$ git commit**
+
+### Selesai!
 
 
