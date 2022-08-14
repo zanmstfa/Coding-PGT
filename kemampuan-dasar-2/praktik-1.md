@@ -20,7 +20,7 @@ Tulis perintah yang ada di gambar yang ada di sebelah kiri secara satu per satu 
 
 Sekarang mari kita perbarui Repo ini. dengan menmbahkan sebuah file di dalam folder "github_guide" yang telah anda buat.
 
-![image](https://user-images.githubusercontent.com/70005931/184524216-f3f2a0b5-15bb-49fd-bd00-ca6cd297f148.png)
+![image](https://user-images.githubusercontent.com/70005931/184526794-5546cc25-8cae-4a11-bf87-743be5474e01.png)
 
 Kembali ke terminal Anda dan git add, git commit, dan git Push:
 
@@ -29,3 +29,5 @@ $ git add .
 $ git commit -m "Second commit"
 $ git push
 ```
+
+![image](https://user-images.githubusercontent.com/70005931/184526807-89fd4b44-011e-4bfc-a397-922eaa0cbf3b.png)
