@@ -95,7 +95,7 @@ Jika Anda adalah pemilik repositori asli, ada dua cara untuk menggabungkan permi
 2. Penggabungan di mesin lokal kami: Di lain waktu, mungkin ada konflik penggabungan, dan setelah mengklik tombol "info", Github akan memiliki instruksi yang jelas tentang bagaimana kami dapat menggabungkan cabang di mesin lokal kami dengan menarik perubahan dari cabang kontributor.
 
 ## Alat 3: Pelacakan Bug
-> Pull Request adalah cara yang luar biasa untuk berkontribusi ke repositori secara mandiri dengan melakukan forking.
+> *Pull Request adalah cara yang luar biasa untuk berkontribusi ke repositori secara mandiri dengan melakukan forking.*
 
 Di Github, pusat untuk semua pelacakan bug adalah Masalah. Meskipun mereka terutama untuk pelacakan bug, juga berguna untuk menggunakan Masalah dengan cara berikut:
 1. Bug: Hal-hal yang jelas rusak dan perlu diperbaiki
@@ -115,11 +115,48 @@ $ git push origin master
 ```
 6. Sebutan: Siapa pun juga dapat meninggalkan catatan dengan hanya menunjukkan #[nomor-masalah] di pesan mereka. Karena nomor masalah memiliki hyperlink, ini membuatnya sangat mudah untuk menyebutkan masalah terkait selama diskusi.
 
+## Alat 4: Analisis
+> *Jelas bahwa kami dapat dengan erat memasangkan daftar tugas kami dan pembaruan untuk komit kode kami.*
 
+Ada dua alat yang memberikan wawasan tentang repositori - Grafik dan Jaringan. Grafik Github memberikan wawasan tentang kolaborator dan komitmen di balik setiap repositori kode, sementara Github Network menyediakan visualisasi pada setiap kontributor dan komitmen mereka di semua repositori bercabang. Analisis dan grafik ini menjadi sangat kuat, terutama saat bekerja dalam tim.
 
+### Grafik
 
+Grafik memberikan analisis terperinci seperti:
 
+1. **Kontributor**: Siapa saja kontributornya? Dan berapa banyak baris kode yang mereka tambahkan atau hapus?
+2. **Aktivitas Komit**: Minggu mana komit terjadi dalam setahun terakhir?
+3. **Frekuensi Kode**: Berapa banyak baris kode yang dilakukan di seluruh siklus hidup proyek?
+4. **Punchcard**: Pada jam berapa biasanya commit dilakukan?
 
+![image](https://user-images.githubusercontent.com/70005931/184542281-87d11fcc-7fc1-4b0c-90c7-fbcc5c367c06.png)
+
+### Jaringan
+[Github Network](https://github.blog/2008-04-10-say-hello-to-the-network-graph-visualizer/) adalah alat yang ampuh yang memungkinkan Anda melihat komitmen setiap kontributor dan bagaimana mereka terkait satu sama lain. Ketika kita melihat visualisator secara keseluruhan, kita melihat setiap komit pada setiap cabang dari setiap repositori yang dimiliki jaringan. Wawasan!
+
+![image](https://user-images.githubusercontent.com/70005931/184542359-2b182d77-2ddc-4f92-841a-c81e420f7d72.png)
+
+## Alat 5: Manajemen Proyek
+Sementara Masalah Github memiliki kemampuan manajemen proyek dengan Masalah dan Tonggak, beberapa tim mungkin lebih memilih alat lain karena fitur lain atau alur kerja yang ada. Di bagian ini, kita akan melihat bagaimana kita dapat menghubungkan Github dengan dua alat manajemen proyek populer lainnya - Trello dan Pivotal Tracker. Dengan kait layanan Github, kami dapat mengotomatiskan tugas pembaruan dengan komitmen, masalah, dan banyak aktivitas lainnya. Otomatisasi ini membantu tidak hanya menghemat waktu, tetapi juga meningkatkan akurasi pembaruan untuk setiap tim pengembangan perangkat lunak.
+
+### Github dan Trello
+Trello menyediakan cara sederhana dan visual untuk mengelola tugas. Menggunakan metodologi Pengembangan Perangkat Lunak Agile, kartu Trello dapat meniru Papan Kanban virtual sederhana. Sebagai contoh, kami akan secara otomatis membuat kartu Trello setiap kali Permintaan Tarik dibuat menggunakan Kait Layanan Github. Mari kita pergi melalui langkah-langkah!
+
+1. Buka akun di Trello jika Anda belum memilikinya dan buat Trello Board baru.
+
+![image](https://user-images.githubusercontent.com/70005931/184542474-3b52afd0-37b3-47e9-bb46-acbda449cd7b.png)
+
+2. Buka repositori Github > Pengaturan > Kait Layanan > Trello
+
+3. Dapatkan TOKEN di bawah Instal Notes #1 dengan hyperlink yang disediakan untuk otentikasi.
+
+4. Di bawah Instal Catatan #2, gunakan URL yang diberikan untuk menghasilkan struktur berformat json yang memberi kita id daftar untuk setiap kartu Trello. BOARDID adalah bagian dari URL ketika kami mengunjungi board di https://trello.com/board/[BOARD-NAME]/[BOARDID]. TOKEN dapat dibuat dengan hyperlink yang diberikan di bawah Install Notes #1.
+
+5. kembali ke kait layanan Github, masukkan id daftar dan token. Centang Aktif, Uji Kait, dan kami siap untuk mendapatkan pembaruan otomatis setiap kali ada Permintaan Tarik.
+6. Saat berikutnya ada Pull Request, kartu Trello Pull Request akan otomatis memiliki item baru!
+
+### Github dan Pivotal Tracker 
+Pivotal Tracker adalah alat manajemen proyek gesit ringan lainnya di mana perencanaan berbasis cerita memungkinkan tim untuk berkolaborasi dengan mudah dengan langsung bereaksi terhadap berbagai perubahan dan kemajuan proyek. Berdasarkan kemajuan tim saat ini, itu juga dapat membuat bagan untuk menganalisis kecepatan tim, iterasi burn-up, rilis burn-down, dll. Dalam contoh singkat ini, kami akan secara otomatis mengirimkan cerita dengan menautkannya ke komit Github!
 
 
 
