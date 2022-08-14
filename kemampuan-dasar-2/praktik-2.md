@@ -82,6 +82,44 @@ $ git push origin readme
 ```
 7. Di halaman Github repositori bercabang kami, kami akan mengubah ke cabang dengan fitur baru dan kemudian menekan tombol "Tarik Permintaan".
 
+![pull req](https://user-images.githubusercontent.com/70005931/184537663-aaab57f2-05d7-44eb-b371-1c06bd79aa72.png)
+
+8. Setelah mengirimkan permintaan tarik, itu akan langsung membawa kita ke halaman permintaan tarik repositori asli. Kami akan melihat permintaan tarik kami, baik sebagai masalah baru maupun permintaan tarik baru.
+
+9. Setelah diskusi, mungkin pemilik repositori bercabang mungkin ingin menambahkan perubahan pada fitur baru. Dalam hal ini, kami akan checkout ke cabang yang sama di mesin lokal kami, melakukan itu, dan mendorongnya kembali ke Github. Ketika kami mengunjungi halaman permintaan tarik dari repositori asli, itu akan diperbarui secara otomatis!
+
+### Menggabungkan Pull Request
+Jika Anda adalah pemilik repositori asli, ada dua cara untuk menggabungkan permintaan tarik yang masuk:
+
+1. Menggabungkan langsung di Github: Jika kita menggabungkan langsung di Github, pastikan tidak ada konflik dan siap untuk digabung ke cabang master. Pemilik repositori asli cukup mengklik tombol hijau "Gabungkan Permintaan Tarik" untuk melakukannya.
+2. Penggabungan di mesin lokal kami: Di lain waktu, mungkin ada konflik penggabungan, dan setelah mengklik tombol "info", Github akan memiliki instruksi yang jelas tentang bagaimana kami dapat menggabungkan cabang di mesin lokal kami dengan menarik perubahan dari cabang kontributor.
+
+## Alat 3: Pelacakan Bug
+> Pull Request adalah cara yang luar biasa untuk berkontribusi ke repositori secara mandiri dengan melakukan forking.
+
+Di Github, pusat untuk semua pelacakan bug adalah Masalah. Meskipun mereka terutama untuk pelacakan bug, juga berguna untuk menggunakan Masalah dengan cara berikut:
+1. Bug: Hal-hal yang jelas rusak dan perlu diperbaiki
+2. Fitur: Ide-ide baru yang keren dan keren untuk diterapkan.
+3. To do list: Daftar periksa item yang harus diselesaikan.
+
+Mari kita jelajahi beberapa fitur dari Issues:
+1. Label: Mereka adalah kategori berwarna untuk setiap edisi. Mereka sangat membantu untuk menyaring masalah yang sesuai.
+2. Milestones: Mereka adalah kategori tanggal yang dapat dikaitkan dengan setiap masalah dan berguna untuk mengidentifikasi masalah apa yang perlu dikerjakan untuk rilis berikutnya. Juga karena Milestones terhubung ke masalah, secara otomatis memperbarui bilah kemajuan setelah menutup setiap masalah terkait.
+3. Pencarian: Pencarian lengkapi otomatis untuk masalah dan pencapaian.
+4. Penugasan: Setiap masalah dapat ditugaskan ke orang yang bertanggung jawab untuk memperbaiki masalah tersebut. Ini adalah fitur lain yang berguna untuk melihat apa yang harus kita kerjakan.
+5. Tutup otomatis: Komit pesan dengan Perbaikan/Tetap atau Tutup/Tutup/Tutup #[nomor-masalah] akan secara otomatis menutup masalah :
+```
+$ git add .
+$ git commit -m "corrected url. fixes #2"
+$ git push origin master
+```
+6. Sebutan: Siapa pun juga dapat meninggalkan catatan dengan hanya menunjukkan #[nomor-masalah] di pesan mereka. Karena nomor masalah memiliki hyperlink, ini membuatnya sangat mudah untuk menyebutkan masalah terkait selama diskusi.
+
+
+
+
+
+
 
 
 
