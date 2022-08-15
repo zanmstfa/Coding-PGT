@@ -39,7 +39,17 @@ Bab ini akan membahas tentang memulai dengan Git. Kita akan mulai dengan menjela
 
 ### Membuat Repo di Github
 
-5. Jika sudah memiliki akun Github anda dapat membuat sebuah Repository caranya Pilih Create Repository yang di tandai kotak merah.
+5. Jika sudah memiliki akun Github anda dapat membuat sebuah Repository, Caranya Pilih Create repository yang di tandai kotak merah.
 
 ![image](https://user-images.githubusercontent.com/70005931/184588451-6a6d2514-ee5c-49bc-9131-bbfe7fb2af82.png)
+
+6. Disini anda perlu memberi nama pada Repository yang akan dibuat, Jika sudah memberi nama scroll kebawah dan pilih Create repository
+
+![image](https://user-images.githubusercontent.com/70005931/184588864-ca0dec5a-398c-4048-bfab-946aeb5f8496.png)
+
+7. Selamat anda berhasil membuat sebuah Repository!
+
+![image](https://user-images.githubusercontent.com/70005931/184589069-f9cd6a85-5989-42a1-86d1-54df44ed3eaf.png)
+
+# SELESAI
 
