@@ -242,8 +242,12 @@ node_js:
 ## Alat 7: Peninjauan Kode
 Dengan setiap komit, Github memungkinkan antarmuka yang bersih untuk komentar umum atau bahkan komentar khusus pada baris kode. Kemampuan untuk mengajukan komentar atau pertanyaan pada setiap baris kode sangat berguna dalam melakukan tinjauan kode baris demi baris. Untuk melihat komentar sebaris, aktifkan-nonaktifkan kotak centang tepat di atas setiap komit
 
+1. **Bandingkan cabang / tag / SHA1** : gunakan pola URL https://github.com/[username]/[repo-name]/compare/[starting-SHA1]...[ending-SHA1]. Anda dapat melakukan hal yang sama dengan cabang atau tag.
 
+2. **Bandingkan tanpa spasi** : tambahkan ?w=1 ke url perbandingan
 
+3. **Diff** : tambahkan .diff ke URL perbandingan untuk mendapatkan informasi git diff dalam teks biasa. Ini bisa berguna untuk tujuan scripting.
 
+4. **Patch** : tambahkan .patch ke URL perbandingan untuk mendapatkan informasi git diff yang diformat untuk pengiriman patch email.
 
-
+5. **Line Linking** : Ketika kita mengklik nomor baris pada file apapun, Github akan menambahkan #line di akhir URL dan membuat seluruh warna latar belakang baris menjadi kuning. Ini rapi untuk menunjukkan garis yang tepat. Itu juga menerima rentang garis dengan menambahkan #start-end. Berikut adalah contoh-contoh dari line linking dan line range linking.
