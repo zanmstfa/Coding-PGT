@@ -239,8 +239,10 @@ node_js:
 
 8. untuk pertama kalinya, kita perlu melakukan git push manual untuk memicu build Travis pertama dan jika semuanya baik-baik saja, kunjungi http://travis-ci.org/[username]/[repo-name] untuk melihat build status lulus!
 
-### Travis CI with Pull Requests
-Sebelumnya, tanpa CI dalam proses pull request, langkah-langkahnya seperti ini (1) mengirim pull request (2) menggabungkan (3) tes untuk melihat apakah lulus/gagal. Dengan Travis CI terhubung ke pull request, kita akan dapat membalikkan langkah 2 dan 3, lebih lanjut meningkatkan pengambilan keputusan yang cepat tentang apakah baik untuk bergabung dengan Travis memberi kita status dengan setiap pull request. Mari kita lihat bagaimana mewujudkannya.
+## Alat 7: Peninjauan Kode
+Dengan setiap komit, Github memungkinkan antarmuka yang bersih untuk komentar umum atau bahkan komentar khusus pada baris kode. Kemampuan untuk mengajukan komentar atau pertanyaan pada setiap baris kode sangat berguna dalam melakukan tinjauan kode baris demi baris. Untuk melihat komentar sebaris, aktifkan-nonaktifkan kotak centang tepat di atas setiap komit
+
+
 
 
 
